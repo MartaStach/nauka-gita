@@ -1,0 +1,66 @@
+/*Global*/
+*, *::before, *::after {
+    box-sizing: border-box; }
+
+body {
+    margin: 30px 0 0 0;
+    font-size: 16px;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 300;
+    text-align: center;
+}
+
+.container {
+    max-width: 1140px;
+    margin: auto;
+}
+
+.poem-title {
+    line-height: 0.5;
+    margin-bottom: 60px;
+}
+
+h1 {
+    text-transform: uppercase;
+}
+
+h2 {
+    color: darkgrey ;
+}
+
+h3 {
+    font-weight: 500;
+}
+
+i {
+    font-size: 500px;
+    position: absolute;
+    color: rgba(190, 229, 176, 0.2);
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 200px;
+}
+
+.poem-text::before {
+    content: "~";
+    font-size: 250px;
+    color: rgba(190, 229, 176, 0.2);
+    position: absolute;
+    left: 0;
+    right: 0;
+    transform: translate( 0, -200px);
+}
+
+.poem-text::after {
+    content: "";
+    font-size: 300px;
+    background-color: rgba(190, 229, 176, 0.2); 
+    position: absolute;
+    width: 300px;
+    margin: auto;
+    height: 7px;
+    left: 0;
+    right: 0;
+    transform: translate(0, 0);
+}
