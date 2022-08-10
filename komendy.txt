@@ -1,0 +1,5 @@
+node_modules/.bin/browser-sync start --server --files "css/*.css" "*.html"
+
+npm install --save-vdev html-validate
+
+html-validate "**/*.html"
